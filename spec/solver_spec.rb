@@ -28,4 +28,13 @@ describe Solver do
       expect(Solver.new.reverse('hello')).to eq 'olleh'
     end
   end
+
+  describe '#fizzbuzz' do
+  it 'return one argument' do
+    expect(Solver.new.method(:fizzbuzz).arity).to(eq(1))
+  end
+  it 'should return fizz if number is divisible by 3' do
+    expect(Solver.new.fizzbuzz(3)).to eq 'fizz'
+  end
+  end
 end
