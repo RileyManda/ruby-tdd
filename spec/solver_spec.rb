@@ -30,11 +30,11 @@ describe Solver do
   end
 
   describe '#fizzbuzz' do
-  it 'return one argument' do
-    expect(Solver.new.method(:fizzbuzz).arity).to(eq(1))
-  end
-  it 'should return fizz if number is divisible by 3' do
-    expect(Solver.new.fizzbuzz(3)).to eq 'fizz'
-  end
+    it 'return one argument' do
+      expect(Solver.new.method(:fizzbuzz).arity).to(eq(1))
+    end
+    it 'should return fizz if number is divisible by 3' do
+      expect(Solver.new.fizzbuzz(3)).to eq 'fizz'
+    end
   end
 end
