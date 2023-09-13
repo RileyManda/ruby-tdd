@@ -21,8 +21,11 @@ describe Solver do
     end
   end
   describe '#reverse' do
-  it 'should return one argument' do
-    expect(Solver.new.method(:reverse).arity).to(eq(1))
+    it 'should return one argument' do
+      expect(Solver.new.method(:reverse).arity).to(eq(1))
+    end
+    it 'should return reversed word' do
+      expect(Solver.new.reverse('hello')).to eq 'olleh'
+    end
   end
-end
 end
