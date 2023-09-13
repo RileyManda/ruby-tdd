@@ -20,4 +20,9 @@ describe Solver do
       expect { Solver.new.factorial(-5) }.to(raise_error(ArgumentError))
     end
   end
+  describe '#reverse' do
+  it 'should return one argument' do
+    expect(Solver.new.method(:reverse).arity).to(eq(1))
+  end
+end
 end
