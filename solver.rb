@@ -14,8 +14,11 @@ class Solver
   end
 
   def fizzbuzz(number)
-    return unless (number % 3).zero?
+    if (number % 3).zero?
 
-    'fizz'
+      'fizz'
+    elsif (number % 5).zero?
+      'buzz'
+    end
   end
 end
