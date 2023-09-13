@@ -1,6 +1,11 @@
 class Solver
   def factorial(number)
-    return unless n.negative?
-    raise ArgumentError, 'string is not defined'
+    if number.negative?
+      raise ArgumentError, 'string is not defined for negative numbers'
+    elsif number.zero?
+      1
+    else
+      number * factorial(number - 1)
+    end
   end
 end
