@@ -17,7 +17,7 @@ describe Solver do
     end
 
     it 'if the number is negative, it should raise an exception' do
-      expect{Solver.new.factorial(-5)}.to (raise_error(ArgumentError))
+      expect { Solver.new.factorial(-5) }.to(raise_error(ArgumentError))
+    end
   end
-end
 end
