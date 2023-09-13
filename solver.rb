@@ -13,12 +13,14 @@ class Solver
     word.reverse
   end
 
-  def fizzbuzz(number)
-    if (number % 3).zero?
-
+ def fizzbuzz(number)
+    if (number % 5).zero? && (number % 3).zero?
+      'fizzbuzz'
+    elsif (number % 3).zero?
       'fizz'
     elsif (number % 5).zero?
       'buzz'
+
     end
   end
 end
